@@ -15,11 +15,13 @@ use App\Enums\WalletTypeEnum;
  * Provides methods for depositing funds into the Wallet model,
  * including handling various wallet types and creating transaction records.
  * 
- * @package Haxneeraj\LaravelVirtualWallet\Traits
+ * @package haxneeraj\laravel-virtual-wallet
  * @author Neeraj Saini
  * @email hax-neeraj@outlook.com
  * @github https://github.com/haxneeraj/
  * @linkedin https://www.linkedin.com/in/hax-neeraj/
+ * @version 1.0.0
+ * @license MIT
  */
 trait DepositTrait
 {

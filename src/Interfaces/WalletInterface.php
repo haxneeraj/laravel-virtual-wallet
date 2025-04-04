@@ -101,7 +101,7 @@ interface WalletInterface
      * @param array $dateRange
      * @param string $sortBy
      * @param string $sortOrder
-     * @return LengthAwarePaginator
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
     public function paginatedTransactions(
         string $walletType = null,

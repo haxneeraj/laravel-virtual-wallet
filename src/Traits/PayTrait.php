@@ -15,11 +15,13 @@ use App\Enums\WalletStatusEnum;
  *
  * Provides methods for interacting with the Wallet model, including querying by various criteria and calculating balances.
  * 
- * @package Haxneeraj\LaravelVirtualWallet\Traits
+ * @package haxneeraj\laravel-virtual-wallet
  * @author Neeraj Saini
  * @email hax-neeraj@outlook.com
  * @github https://github.com/haxneeraj/
  * @linkedin https://www.linkedin.com/in/hax-neeraj/
+ * @version 1.0.0
+ * @license MIT
  */
 trait PayTrait
 {
