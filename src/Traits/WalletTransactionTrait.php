@@ -3,6 +3,7 @@
 namespace Haxneeraj\LaravelVirtualWallet\Traits;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidWalletException;
 use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidCurrencyException;

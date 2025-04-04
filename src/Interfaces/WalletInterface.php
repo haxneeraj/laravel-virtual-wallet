@@ -39,7 +39,7 @@ interface WalletInterface
      * Define the polymorphic wallet relationship.
      *
      * @param string|null $walletType
-     * @return MorphMany
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function wallets(string $walletType = null): MorphMany;
 
