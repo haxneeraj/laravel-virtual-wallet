@@ -4,6 +4,7 @@ namespace Haxneeraj\LaravelVirtualWallet\Interfaces;
 
 use Haxneeraj\LaravelVirtualWallet\DataObjects\PaymentData;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Interface WalletInterface
@@ -33,7 +34,7 @@ interface WalletInterface
      * @return string
      */
     public function walletTransactionModelClass(): string;
-    
+
     /**
      * Define the polymorphic wallet relationship.
      *
@@ -87,7 +88,7 @@ interface WalletInterface
      * Define the polymorphic transaction relationship.
      *
      * @param string|null $walletType
-     * @return MorphMany
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function transactions(string $walletType = null): MorphMany;
 
