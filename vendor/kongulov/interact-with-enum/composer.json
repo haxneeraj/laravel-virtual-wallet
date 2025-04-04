@@ -1,0 +1,30 @@
+{
+    "name": "kongulov/interact-with-enum",
+    "description": "Trait for convenient use of ENUM in PHP",
+    "keywords": [
+        "php",
+        "enum"
+    ],
+    "homepage": "https://github.com/kongulov/interact-with-enum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ramiz Kongulov",
+            "email": "ramiz.kongulov@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kongulov\\Traits\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
