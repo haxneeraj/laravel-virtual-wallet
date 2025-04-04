@@ -2,7 +2,6 @@
 
 namespace Haxneeraj\LaravelVirtualWallet\Traits;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Haxneeraj\LaravelVirtualWallet\Traits\ModelTrait;
 use Haxneeraj\LaravelVirtualWallet\Traits\VirtualWalletTrait;
 use Haxneeraj\LaravelVirtualWallet\Traits\WalletTransactionTrait;

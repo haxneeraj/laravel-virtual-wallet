@@ -6,13 +6,7 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidWalletException;
-use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidCurrencyException;
-use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidCurrencyTypeException;
-use Haxneeraj\LaravelVirtualWallet\Exceptions\InvalidStatusException;
 use App\Enums\WalletTypeEnum;
-use App\Enums\CurrencyEnums;
-use App\Enums\CurrencyTypeEnum;
-use App\Enums\WalletStatusEnums;
 
 /**
  * Trait WalletTransactionTrait

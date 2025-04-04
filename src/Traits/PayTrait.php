@@ -9,8 +9,6 @@ use Haxneeraj\LaravelVirtualWallet\DataObjects\PaymentData;
 use Haxneeraj\LaravelVirtualWallet\Models\WalletTransaction;
 use App\Enums\WalletTypeEnum;
 use App\Enums\WalletStatusEnum;
-use App\Enums\CurrencyTypeEnum;
-use App\Enums\TransactionTypeEnum;
 
 /**
  * Trait PayTrait
