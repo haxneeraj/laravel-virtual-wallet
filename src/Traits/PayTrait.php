@@ -52,7 +52,7 @@ trait PayTrait
                     throw new \Exception("Wallet is not active"); 
                 endif;
 
-                if (!$this->hasSufficientBalanceByWalletType($paymentData->amount, $paymentData->wallet_type)):
+                if (!$this->hasSufficientBalance($paymentData->amount, $paymentData->wallet_type)):
                     throw new InsufficientBalanceException(); // Throws exception if insufficient balance 
                 endif;
                 
