@@ -89,11 +89,12 @@ trait PayTrait
                     if (!$wallet->hasBalance() || $wallet->status?->value != WalletStatusEnum::ACTIVE){
                         continue;
                     }
+                    
 
                     // Deduct from multiple wallets if needed 
                     $amountToDeduct = min($wallet->balance, $remainAmount);
                     $wallet->balance -= $amountToDeduct;
-                    $wallet->save(); 
+                    $wallet->save();
 
                     // Create wallet transaction for each wallet 
                     $wallet_transaction = WalletTransaction::create([
