@@ -90,7 +90,6 @@ trait PayTrait
                         continue;
                     }
                     
-
                     // Deduct from multiple wallets if needed 
                     $amountToDeduct = min($wallet->balance, $remainAmount);
                     $wallet->balance -= $amountToDeduct;
