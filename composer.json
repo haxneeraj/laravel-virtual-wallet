@@ -1,0 +1,49 @@
+{
+    "name": "haxneeraj/laravel-virtual-wallet",
+    "description": "Laravel Virtual Wallet Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neeraj Saini",
+            "email": "hax-neeraj@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Haxneeraj\\LaravelVirtualWallet\\": "src/"
+        },
+        "files": [
+          "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Haxneeraj\\LaravelVirtualWallet\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "kongulov/interact-with-enum": "^1.0"
+    },
+    "require-dev" : {
+        "mockery/mockery": "^1.7",
+        "orchestra/testbench": "^8.18",
+        "phpunit/phpunit": "^10.5",
+        "larastan/larastan": "^2.9",
+        "laravel/pint": "^1.16"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Haxneeraj\\LaravelVirtualWallet\\LaravelVirtualWalletServiceProvider"
+            ]
+        }
+    },
+    "scripts": {        
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
