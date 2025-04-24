@@ -128,9 +128,9 @@ $user->hasSufficientBalance(50, 'main');
 | Method                   | Parameters                                       | Returns          | Description                            |
 |--------------------------|--------------------------------------------------|------------------|----------------------------------------|
 | `wallets()`              | `string $walletType = null`                      | `MorphMany`      | Get all wallets or filter by type      |
-| `getBalance()`           | `string $walletType = null`                      | `int | float`    | Get wallet balance                     |
+| `getBalance()`           | `string $walletType = null`                      | `int OR float`   | Get wallet balance                     |
 | `hasBalance()`           | `string $walletType = null`                      | `bool`           | Check if wallet has positive balance   |
-| `hasSufficientBalance()` | `int | float $amount, string $walletType = null` | `bool`           | Check if wallet has sufficient balance |
+| `hasSufficientBalance()` | `int OR float $amount, string $walletType = null`| `bool`           | Check if wallet has sufficient balance |
 
 #### Payment Processing
 
